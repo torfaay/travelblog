@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>วัดพระแก้ว</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/place.css" rel="stylesheet">
+
+</head>
+<body>
+<header id="header">
+    <section id="page-breadcrumb">
+        <div id="login_block" class="modal">
+            <form class="modal-content animate" method="post" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('login_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label><b>E-mail</b>
+                        <input type="email" placeholder="Enter E-mail as username" id="username" required>
+                        <p id="warningEmail_login" class="invalid">Invalid Email</p>
+                    </label>
+
+                    <label><b>Password</b>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    </label>
+
+
+                    <button type="submit" id="Login">Login</button>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw" id="ForgetPass">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div id="register_block" class="modal2">
+            <form class="modal-content animate" method="post" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('register_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label for="rusername"><b>E-mail</b>
+                    <input type="email" placeholder="example@gmail.com" id="rusername" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ></label>
+                    <p id="warningEmail" class="invalid">Invalid Email</p>
+
+                    <label for="rname"><b>DisplayName</b>
+                        <input type="text" placeholder="YourDisplayName" id="rname" minlength="4" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}">
+                    </label>
+                    <p id="warningName_num" class="invalid">Minimum 4 letters</p>
+                    <p id="warningName_char" class="invalid">Don't use Special Character</p>
+
+                    <label for="rpassword"><b>Password</b>
+                    <input type="password" placeholder="Enter Password" id="rpassword" minlength="6" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <p id="warningPass" class="invalid">Minimum 6 letters</p>
+
+                    <label for="conpassword"><b>Confirm Password</b>
+                    <input type="password" placeholder="Confirm Password" id="conpassword" minlength="6" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <p id="warningConPass" class="invalid">Password doesn't match</p>
+
+                    <button type="submit" id="Register" value="Submit">Register</button>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw" id="RForgetPass">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="navbar navbar-inverse" role="banner">
+            <table class="navbart">
+                <tr>
+                    <td rowspan="2">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </td>
+                    <td>
+                        <div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li onclick="login()"><a href="#modal" class="button-login"> Login</a></li>
+                                    <li onclick="register()"><a href="#modal" class="button-login"> Register |</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="navbarlist overflow">
+                        <ul>
+                            <li><a href="type_religious.html">Religious Sites</a></li>
+                            <li><a href="type_art_museum.html">Art & Museum</a></li>
+                            <li><a href="type_market.html">Market</a></li>
+                            <li><a href="type_natural.html">Natural</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</header>
+
+<section id="blog_content" class="padding-bottom">
+    <div class="page_header">
+        <h1>วัดพระศรีรัตนศาสดาราม</h1>
+    </div>
+    <div class="page_content">
+        <div class="article">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img_2/watphakeaw_1.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img_2/watphakeaw_2.jpg" >
+                </div>
+                <div class="mySlides fade">
+                    <img src="img_2/watphakeaw_3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img_2/watphakeaw_5.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img_2/watphakeaw_6.png">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img_2/watphakeaw_7.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <div class="article_info">
+                <p>วัดพระแก้วเป็นที่ประดิษฐานของพระพุทธมหามณีรัตนปฏิมากร หรือพระแก้วมรกต พระพุทธรูปปางสมาธิอันเป็นที่เคารพสักการะของพุทธศาสนิกชนไทย วัดพระแก้วตั้งอยู่ในเขตพระบรมมหาราชวัง
+                    มีชื่ออย่างเป็นทางการว่าวัดพระศรีรัตนศาสดาราม รัชกาลที่ 1 โปรดเกล้าฯ ให้สร้างวัดพระแก้วขึ้นในปี 2325 และได้ทรงอัญเชิญพระแก้วมรกตที่แต่เดิมอยู่ที่วัดอรุณ มาประดิษฐานยังวัดนี้แทน</p>
+                <p>พระอุโบสถอันเป็นที่ประดิษฐานพระแก้วมรกตได้รับการตกแต่งอย่างวิจิตรงดงาม องค์พระแก้วมรกตไม่ได้ทำขึ้นจากมรกต แต่แกะสลักขึ้นจากหยกอ่อนสีเขียวมรกต
+                    หลักฐานระบุว่าพบพระแก้วมรกตครั้งแรกในปี 1977 ในวัดที่จังหวัดเชียงราย โดยถูกพอกปูนทับไว้จนทึบเหมือนพระพุทธรูปทั่วไป เมื่อเนื้อปูนกะเทาะออกจึงพบว่าเป็นพระพุทธรูปหยกทั้งองค์</p>
+                <p> พุทธศาสนิกชนชาวไทยยังคงเดินทางมายังวัดพระแก้วเพื่อนมัสการพระแก้วมรกต ซึ่งมีเครื่องทรงครบ 3 ฤดู คือ ฤดูร้อน ฤดูฝน และฤดูหนาว และมีพระราชพิธีเปลี่ยนเครื่องทรงทุกปีมาจนปัจจุบัน
+                    นอกจากพระแก้วมรกตและอุโบสถอันงดงามแล้ว วัดพระแก้วยังมีสิ่งที่น่าสนใจอีกมากมาย เช่น ปราสาทพระเทพบิดร และนครวัดจำลองที่สร้างขึ้นในสมัยรัชกาลที่ 4
+                    หากเดินผ่านยักษ์ทวารบาลไปยังบริเวณพระระเบียง ก็จะพบจิตรกรรมฝาผนังที่ร้อยเรียงเรื่องราวจากวรรณคดีเรื่องรามเกียรติ์ พระบรมมหาราชวังและวัดพระแก้วเปิดให้เข้าชมทุกวัน
+                    โดยคนไทยสามารถเข้าชมฟรี แต่อย่าลืมแต่งกายให้เหมาะสม</p>
+
+            </div>
+
+        </div>
+
+        <div class="aside padding-bottom">
+            <span class="post-date">February 14, 2018</span>
+            <span class="like-num">3</span>
+            <span class="fa-heart">
+                <img src="images/home/like.png" onmouseover="hoverlike(this);"
+                     onmouseout="unhoverlike(this);"/>
+            </span>
+            <hr>
+            <h3>ที่ตั้ง</h3>
+            <p>ถนนหน้าพระลาน แขวงพระบรมมหาราชวัง เขตพระนคร 10200</p>
+            <h3>เวลาทำการ</h3>
+            <p>ทุกวัน เวลา : 08.30 – 15.30 น.</p>
+            <p>คนไทยไม่เสียค่าเข้าชม ชาวต่างชาติเสียค่าเข้าชม 500 บาท</p>
+
+            <div id="map"></div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center bottom-separator">
+                <img src="images/home/under.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>  
+
+<script>
+function myMap() {
+    var place = {lat: 13.751705, lng: 100.492701};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: place
+        });
+        var marker = new google.maps.Marker({
+          position: place,
+          map: map
+        });
+    }
+</script>
+<script language="JavaScript" src="js/slideshow.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2xE0K1JFc3ZSwbEjqG2NfHGiHvRWUin0&callback=myMap"></script>
+
+</body>
+</html>
