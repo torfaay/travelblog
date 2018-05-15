@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Art & Museum</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/type.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header id="header">
+    <section id="page-breadcrumb">
+        <div id="login_block" class="modal">
+            <form class="modal-content animate" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('login_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href=""><img class="fa-facebook" src="images/home/facebook.png"
+                                            onmouseover="hoverfacebook(this);"
+                                            onmouseout="unhoverfacebook(this);"/></a></li>
+                        <li><a href=""><img class="fa-twitter" src="images/home/twitter.png"
+                                            onmouseover="hovertwitter(this);"
+                                            onmouseout="unhovertwitter(this);"/></a></li>
+                    </ul>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div id="register_block" class="modal2">
+            <form class="modal-content animate" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('register_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <label><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" name="conpassword" required>
+
+                    <button type="submit">Register</button>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href=""><img class="fa-facebook" src="images/home/facebook.png"
+                                            onmouseover="hoverfacebook(this);"
+                                            onmouseout="unhoverfacebook(this);"/></a></li>
+                        <li><a href=""><img class="fa-twitter" src="images/home/twitter.png"
+                                            onmouseover="hovertwitter(this);"
+                                            onmouseout="unhovertwitter(this);"/></a></li>
+                    </ul>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="navbar navbar-inverse" role="banner">
+            <table class="navbart">
+                <tr>
+                    <td rowspan="2">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </td>
+                    <td>
+                        <div class="overflow">
+                            <div class="social-icons">
+                                <ul>
+                                    <li onclick="login()"><a href="#modal" class="button-login"> Login</a></li>
+                                    <li onclick="register()"><a href="#modal" class="button-login"> Register |</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="navbarlist overflow">
+                        <ul>
+                            <li><a href="index.html">Religious Sites</a></li>
+                            <li><a href="type_art_museum.html">Art & Museum</a></li>
+                            <li><a href="type_market.html">Market</a></li>
+                            <li><a href="type_natural.html">Natural</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</header>
+<!--/#header-->
+
+<section id="blog_type" class="padding-bottom">
+
+    <div class="img_type">
+
+        <img class="mySlides" src="images/type_art_museum/head_museum_1.jpg">
+        <img class="mySlides" src="images/type_art_museum/head_museum_2.jpg">
+        <img class="mySlides" src="images/type_art_museum/head_museum_3.jpg">
+
+        <div class="description_type">
+            <h1>Art & Museum</h1>
+            <p>ART is not what you see BUT what you make others see. -- Edgar Degas</p>
+        </div>
+    </div>
+    <div class="block_type_list">
+        <!--places 1-->
+        <div class="block_type_content">
+            <div class="block_1">
+                <img class="block_img" src="images/type_art_museum/museum_siriraj_1.jpg" alt=""  >
+            </div>
+            <div class="block_2">
+                <div class="block_info">
+                <h3 >พิพิธภัณฑ์แพทย์ศิริราช</h3>
+                <p>
+                    เป็นพิพิธภัณฑ์ที่บอกเล่าเรื่องราววิวัฒนาการทางการแพทย์ของประเทศไทยในรอบร้อยปีที่ผ่านมา <br>
+                    สิ่งประดิษฐ์ทางการแพทย์ รูปภาพประวัติศาสตร์ทางการแพทย์ของประเทศไทย และอีกหลากหลายที่น่าสนใจ ....&nbsp; &nbsp; &nbsp;<a href="place_museum_siriraj.html">เพิ่มเติม</a></p>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!--places 2-->
+        <div class="block_type_content">
+            <div class="block_1">
+                <div class="block_info">
+                <h3 >Art in paradise BKK</h3>
+                <p>
+                    เป็นอาร์ทมิวเซียมที่ดูแปลกตา เข้าไปแล้วมีรูปวาด 3 มิติ มาแสดงให้ผู้คนที่ชอบถ่ายรูปมาให้ได้ถ่ายมากมาย ไม่ว่าจะเป็นรูปแนวไทย วิวทิวทัศน์ รูปที่ให้ความระทึก มากมายกว่า 200 รูป
+                    หากคุณถ่ายรูปคู่คุณจะได้รับรู้ถึงความมหัศจรรย์ มีรูปแปลก ๆ สถานที่ดี สะอาด ประการสำคัญเหมาะสำหรับการถ่ายภาพเป็นอย่างยิ่ง ออกจากอาร์อินพาราไดซ์สามารถเดินเที่ยวช๊อปปิ้งและดูหนังต่อได้เลย ....&nbsp; &nbsp; &nbsp;<a href="place_museum_artinparadise.html">เพิ่มเติม</a></p>
+                    <hr>
+                </div>
+
+            </div>
+            <div class="block_2">
+                <img class="block_img" src="images/type_art_museum/museum_artinparadise_3.jpg" alt=""  >
+            </div>
+
+        </div>
+
+        <!--places 3-->
+        <div class="block_type_content">
+            <div class="block_1">
+                <img class="block_img" src="images/type_art_museum/museum_fabricqueen_5.jpg" alt=""  >
+            </div>
+            <div class="block_2">
+                <div class="block_info">
+                <h3 >พิพิธภัณฑ์ผ้าในสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ</h3>
+                <p>
+                    พิพิธภัณฑ์ผ้าตั้งอยู่ในเขตพระบรมมหาราชวัง ตรงทางเข้าด้านหน้าทางขวามือจะมีอาคารที่แสดงโชว์ผ้าไทยในแบบต่างๆ ชุดฉลองพระองค์ของสมเด็จพระนางเจ้าสิริกิติ์พระบรมราชินีนาถ ทำจากผ้าไทย แสดงให้เห็นถึงความงดงามและเอกลักษณ์คุณค่าของความเป็นไทย ....&nbsp; &nbsp; &nbsp;<a href="place_museum_fabricqueen.html">เพิ่มเติม</a> </p>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <!--places 4-->
+         <div class="block_type_content">
+            <div class="block_1">
+                <div class="block_info">
+                <h3 >Neilson Hays Library</h3>
+                <p>สถาปัตยกรรมเก่า โดดเด่นท่ามกลางย่านที่เต็มไปด้วยตึกสูงทันสมัยอย่างย่านสีลม ห้องสมุด เนลสัน เฮย์ มีมนต์เสน่ห์ บอกเล่าเรื่องราวของถนนสายหลักที่เคยมีชาวต่างชาติเข้ามาอาศัยตั้งแต่สมัยรัชกาลที่ 4 โดยมีเอกลักษณ์ตรงที่เป็นห้องสมุดที่มีเฉพาะหนังสือภาษาอังกฤษเท่านั้น เป็นอีกหนึ่งสถานในย่านสีลมที่น่าแวะมากันในวันว่าง
+                     ....&nbsp; &nbsp; &nbsp;<a href="place_museum_nelsonlib.html">เพิ่มเติม</a> </p>
+                    <hr>
+                </div>
+
+            </div>
+            <div class="block_2">
+                <img class="block_img" src="images/type_art_museum/museum_nelsonlib_4.jpg" alt=""  >
+            </div>
+         </div>
+    </div>
+
+
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center bottom-separator">
+                <img src="images/home/under.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script language="JavaScript" src="js/script_img_change.js"></script>
+</body>
+</html>

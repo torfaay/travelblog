@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>สวนสัตว์ดุสิต</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/place.css" rel="stylesheet">
+</head>
+<body>
+<header id="header">
+    <section id="page-breadcrumb">
+        <div id="login_block" class="modal">
+            <form class="modal-content animate" method="post" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('login_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label><b>E-mail</b>
+                        <input type="email" placeholder="Enter E-mail as username" id="username" required>
+                        <p id="warningEmail_login" class="invalid">Invalid Email</p>
+                    </label>
+
+                    <label><b>Password</b>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    </label>
+
+
+                    <button type="submit" id="Login">Login</button>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw" id="ForgetPass">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div id="register_block" class="modal2">
+            <form class="modal-content animate" method="post" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('register_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label for="rusername"><b>E-mail</b>
+                    <input type="email" placeholder="example@gmail.com" id="rusername" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ></label>
+                    <p id="warningEmail" class="invalid">Invalid Email</p>
+
+                    <label for="rname"><b>DisplayName</b>
+                        <input type="text" placeholder="YourDisplayName" id="rname" minlength="4" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}">
+                    </label>
+                    <p id="warningName_num" class="invalid">Minimum 4 letters</p>
+                    <p id="warningName_char" class="invalid">Don't use Special Character</p>
+
+                    <label for="rpassword"><b>Password</b>
+                    <input type="password" placeholder="Enter Password" id="rpassword" minlength="6" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <p id="warningPass" class="invalid">Minimum 6 letters</p>
+
+                    <label for="conpassword"><b>Confirm Password</b>
+                    <input type="password" placeholder="Confirm Password" id="conpassword" minlength="6" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <p id="warningConPass" class="invalid">Password doesn't match</p>
+
+                    <button type="submit" id="Register" value="Submit">Register</button>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw" id="RForgetPass">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="navbar navbar-inverse" role="banner">
+            <table class="navbart">
+                <tr>
+                    <td rowspan="2">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </td>
+                    <td>
+                        <div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li onclick="login()"><a href="#modal" class="button-login"> Login</a></li>
+                                    <li onclick="register()"><a href="#modal" class="button-login"> Register |</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="navbarlist overflow">
+                        <ul>
+                            <li><a href="type_religious.html">Religious Sites</a></li>
+                            <li><a href="type_art_museum.html">Art & Museum</a></li>
+                            <li><a href="type_market.html">Market</a></li>
+                            <li><a href="type_natural.html">Natural</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</header>
+
+<section id="blog_content" class="padding-bottom">
+    <div class="page_header">
+        <h1>สวนสัตว์ดุสิต</h1>
+    </div>
+    <div class="page_content">
+        <div class="article">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img_2/dusit_9_ed.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img_2/dusit_8_ed.jpg" >
+                </div>
+                <div class="mySlides fade">
+                    <img src="img_2/dusit_10_ed.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img_2/dusit_11_ed.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <div class="article_info">
+                <p>สวนสัตว์ดุสิต (Dusit Zoo) หรือในชื่อที่เราคุ้นหูกันคือ สวนสัตว์เขาดินเดิมเป็นส่วนหนึ่งของพระราชอุทยานสวนดุสิตโดยพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว
+                    รัชกาลที่ 5 ทรงโปรดเกล้าฯ ให้สร้างขึ้นเป็นสถานที่พักผ่อนส่วนพระองค์ และทรงนำกวางดาวฝูงหนึ่งจากชวามาเลี้ยงรวมกับสัตว์อื่นๆ หลายชนิด</p>
+                <p>ต่อมาในรัชสมัย พระบาทสมเด็จพระเจ้าอยู่หัวอานันทมหิดล รัชกาลที่ 8 คณะรัฐบาลได้กราบบังคมทูล ขอพระราชทานสวนดุสิตให้เทศบาลนครกรุงเทพฯ
+                    ดำเนินการจัดสร้างเป็นสวนสัตว์ และเป็นที่พักผ่อนของประชาชน และให้ใช้ชื่อว่า “สวนสัตว์ดุสิต” ซึ่งชาวบ้านทั่วไปเรียกว่า“เขาดินวนา” เป็นที่มาของสวนสัตว์เขาดินในทุกวันนี้ในที่สุด</p>
+                <p>สวนสัตว์เขาดินเป็นสวนสัตว์ที่เปิดให้ประชาชนสามารถเข้าชมสัตว์ชนิดต่างๆ ได้ และรวบรวมสัตว์นานาชนิดเอาไว้ พร้อมทั้งให้ข้อมูลเกี่ยวกับสัตว์ป่าตามธรรมชาติและสิ่งแวดล้อม
+                    เป็นสถานที่ที่เหมาะแก่การมาพักผ่อนหย่อนใจ และเข้ามาเที่ยวชมสัตว์แปลกๆ ที่ไม่สามารถพบเจอได้ในชีวิตจริง และยังเหมาะแก่การพาเด็กๆ มาศึกษาหาความรู้เกี่ยวกับสัตว์ชนิดต่างๆ ในโลกของเราด้วย</p>
+
+            </div>
+
+        </div>
+
+        <div class="aside padding-bottom">
+            <span class="post-date">May 8, 2018</span>
+            <span class="like-num">3</span>
+            <span class="fa-heart">
+                <img src="images/home/like.png" onmouseover="hoverlike(this);"
+                     onmouseout="unhoverlike(this);"/>
+            </span>
+            <hr>
+            <h3>ที่ตั้ง</h3>
+            <p>ตั้งอยู่เลขที่ 71 ถนนพระรามที่ 5 แขวงดุสิต เขตดุสิต กรุงเทพมหานคร </p>
+            <h3>เวลาทำการ</h3>
+            <p>เปิดทุกวัน เวลา 08.00 - 18.00 น. </p>
+
+            <div id="map"></div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center bottom-separator">
+                <img src="images/home/under.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>  
+
+<script>
+function myMap() {
+    var place = {lat: 13.774203, lng: 100.516179};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: place
+        });
+        var marker = new google.maps.Marker({
+          position: place,
+          map: map
+        });
+}
+</script>
+<script language="JavaScript" src="js/slideshow.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2xE0K1JFc3ZSwbEjqG2NfHGiHvRWUin0&callback=myMap"></script>
+
+</body>
+</html>

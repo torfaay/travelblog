@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="js/controller.js"></script>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/login.css" rel="stylesheet"/>
+    <link href="css/profile.css" rel="stylesheet"/>
+    <title>Roam | Profile</title>
+</head>
+<body>
+<header id="header">
+    <section id="page-breadcrumb">
+        <div id="login_block" class="modal">
+            <form class="modal-content animate" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('login_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href=""><img class="fa-facebook" src="images/home/facebook.png"
+                                            onmouseover="hoverfacebook(this);"
+                                            onmouseout="unhoverfacebook(this);"/></a></li>
+                        <li><a href=""><img class="fa-twitter" src="images/home/twitter.png"
+                                            onmouseover="hovertwitter(this);"
+                                            onmouseout="unhovertwitter(this);"/></a></li>
+                    </ul>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div id="register_block" class="modal2">
+            <form class="modal-content animate" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('register_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <label><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" name="conpassword" required>
+                    <label><b>E-mail</b></label>
+                    <input type="email" placeholder="E-mail address" name="email" required>
+
+                    <button type="submit">Register</button>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href=""><img class="fa-facebook" src="images/home/facebook.png"
+                                            onmouseover="hoverfacebook(this);"
+                                            onmouseout="unhoverfacebook(this);"/></a></li>
+                        <li><a href=""><img class="fa-twitter" src="images/home/twitter.png"
+                                            onmouseover="hovertwitter(this);"
+                                            onmouseout="unhovertwitter(this);"/></a></li>
+                    </ul>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="navbar navbar-inverse" role="banner">
+            <table class="navbart">
+                <tr>
+                    <td rowspan="2">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </td>
+                    <td>
+                        <div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li onclick="login()"><a href="#modal" class="button-login"> Login</a></li>
+                                    <li onclick="register()"><a href="#modal" class="button-login"> Register |</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="navbarlist overflow">
+                        <ul>
+                            <li><a href="index.html">Religious Sites</a></li>
+                            <li><a href="type_art_museum.html">Art & Museum</a></li>
+                            <li><a href="type_market.html">Market</a></li>
+                            <li><a href="type_natural.html">Natural</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</header>
+<!--/#header-->
+
+<section id="profile" class="padding-bottom">
+
+    <div>
+        <table class="img-profile">
+            <tr>
+                <td colspan="2">
+                    <img src="images/blogdetails/1.png"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td-name">
+                    <h2 id="name">John Doe</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    username:
+                </td>
+                <td>
+                    <span id="username"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    password:
+                </td>
+                <td>
+                    <span id="password"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="edit">
+                    <img src="images/home/pencil.png" onmouseover="hoveredit(this);" onmouseout="unhoveredit(this);"/>
+                </td>
+            </tr>
+        </table>
+        <table class="navtabs">
+            <tr>
+                <td>
+                    <div class="tabs">
+                        <ul>
+                            <li class="active"><a href="#hist">Favourites</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="tab-content">
+                        <div id="hist-tab">
+                            <h3>Favourites</h3>
+                            <div class="block_type_content">
+                                <div class="block_1">
+                                    <img class="block_img" src="images/page_1/LV_1_1.jpg" alt="">
+                                </div>
+                                <div class="block_2">
+                                    <div class="block_info">
+                                        <h3>[ NEVADA ] ตะลุยเที่ยวสั้นๆที่ลาสเวกัส</h3>
+                                        <p>
+                                            ทำไมถึงเลือกลาสเวกัส? <br>
+                                            เหตุผลง่ายๆมาก แทบไม่ต้องใช้สมองคิดเลย จะไปเสี่ยงโชดหวังรวย เฮ้ย!
+                                            ไม่อยากบินไปเที่ยวทางตะวันออกอย่างนิวยอร์กต่างหากล่ะ เพราะกลัวหนาว<br>
+                                            แถมบริเวณรอบๆลาสเวกัสยังมีอุทยานแห่งชาติหลายแห่ง
+                                            ยิ่งเราชอบท่องเที่ยวเเนวธรรมชาติอยู่แล้ว ทริปนี้คงฟินๆอีกตามเคย
+                                            เเค่เดินท่ามกลางภูเขา<br>
+                                            และสายน้ำ...ก็มีความสุขแล้ว :') ....&nbsp; &nbsp; &nbsp;<a
+                                                href="blog_1.html">เพิ่มเติม</a></p>
+                                        <br>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<!--/#blog-->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="text-center bottom-separator">
+                <img src="images/home/under.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/#footer-->
+
+</body>
+</html>

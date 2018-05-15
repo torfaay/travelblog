@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Neilson Hays Library</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/place.css" rel="stylesheet">
+</head>
+<body>
+<header id="header">
+    <section id="page-breadcrumb">
+        <div id="login_block" class="modal">
+            <form class="modal-content animate" method="post" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('login_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label><b>E-mail</b>
+                        <input type="email" placeholder="Enter E-mail as username" id="username" required>
+                        <p id="warningEmail_login" class="invalid">Invalid Email</p>
+                    </label>
+
+                    <label><b>Password</b>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    </label>
+
+
+                    <button type="submit" id="Login">Login</button>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw" id="ForgetPass">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div id="register_block" class="modal2">
+            <form class="modal-content animate" method="post" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('register_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label for="rusername"><b>E-mail</b>
+                    <input type="email" placeholder="example@gmail.com" id="rusername" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ></label>
+                    <p id="warningEmail" class="invalid">Invalid Email</p>
+
+                    <label for="rname"><b>DisplayName</b>
+                        <input type="text" placeholder="YourDisplayName" id="rname" minlength="4" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}">
+                    </label>
+                    <p id="warningName_num" class="invalid">Minimum 4 letters</p>
+                    <p id="warningName_char" class="invalid">Don't use Special Character</p>
+
+                    <label for="rpassword"><b>Password</b>
+                    <input type="password" placeholder="Enter Password" id="rpassword" minlength="6" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <p id="warningPass" class="invalid">Minimum 6 letters</p>
+
+                    <label for="conpassword"><b>Confirm Password</b>
+                    <input type="password" placeholder="Confirm Password" id="conpassword" minlength="6" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <p id="warningConPass" class="invalid">Password doesn't match</p>
+
+                    <button type="submit" id="Register" value="Submit">Register</button>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw" id="RForgetPass">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="navbar navbar-inverse" role="banner">
+            <table class="navbart">
+                <tr>
+                    <td rowspan="2">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </td>
+                    <td>
+                        <div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li onclick="login()"><a href="#modal" class="button-login"> Login</a></li>
+                                    <li onclick="register()"><a href="#modal" class="button-login"> Register |</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="navbarlist overflow">
+                        <ul>
+                            <li><a href="type_religious.html">Religious Sites</a></li>
+                            <li><a href="type_art_museum.html">Art & Museum</a></li>
+                            <li><a href="type_market.html">Market</a></li>
+                            <li><a href="type_natural.html">Natural</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</header>
+<!--/#header-->
+
+<section id="blog_content" class="padding-bottom">
+    <div class="page_header">
+        <h1>Neilson Hays Library</h1>
+    </div>
+    <div class="page_content">
+        <div class="article">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/museum/museum_nelsonlib_1.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/museum/museum_nelsonlib_2.jpg" >
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/museum/museum_nelsonlib_3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/museum/museum_nelsonlib_4.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <div class="article_info">
+                <p> <h3>เนลสัน เฮย์ ห้องสมุดสุดคลาสสิคในสีลม</h3>
+                อาคารสไตล์นีโอคลาสสิคบนนถนนสุรวงศ์ ภายในตกแต่งด้วยเฟอร์นิเจอร์ไม้ บ่งบอกถึงความเก่าแก่ของห้องสมุด เนลสัน เฮย์ ซึ่งปัจจุบันมีอายุมากกว่า 150 ปี ใครที่ชอบอ่านหนังสือภาษาอังกฤษน่าจะถูกใจ เพราะในกรุงเทพฯ มีห้องสมุดภาษาอังกฤษอยู่แค่ไม่กี่แห่งเท่านั้นเอง
+                </p>
+                <p>ห้องสมุด เนลสัน เฮย์ สร้างขึ้นเพื่อเป็นอนุสรณ์แห่งความรักให้กับนาง เจนนี่ เนลสัน เฮย์ ภรรยาผู้ทำงานอุทิศตัวให้กับสมาคมห้องสมุดและเป็นผู้ที่หลงรักการอ่านหนังสือ ออกแบบโดย มารีโอ ตามัญโญ สถาปนิกชาวอิตาลี ซึ่งเข้ามารับราชการกับกระทรวงโยธาธิการในสมัยรัชกาลที่ 4 เป็นสถาปนิกคนเดียวกันกับผู้ออกแบบพระที่นั่งอนันตสมาคม ย้อนไปในสมัยนั้นที่นี่เป็นห้องสมุดเปิดให้บริการเฉพาะชาวต่างชาติเท่านั้น
+                </p>
+                <p>
+                    ประเภทหนังสือที่อยู่ในห้องสมุดเนลสัน เฮย์ ส่วนใหญ่จะเป็นนวนิยาย ผสมกับหนังสือประวัติศาสตร์ เศรษฐกิจ และมีโซนหนังสือสำหรับเด็กด้วย สามารถนั่งอ่านในห้องสมุดรับลมจากเครื่องปรับอากาศ หรือจะยืมออกไปนั่งอ่านในสวนด้านนอกรับลมธรรมชาติก็ได้เช่นกัน ส่วนวันเสาร์และอาทิตย์ ห้องสมุดแห่งนี้ มักมีการจัดกิจกรรมอยู่บ่อย ๆ อย่างเช่นนิทรรศการศิลปะ หรือเล่านิทานสำหรับเด็ก ส่วนใครที่อยากพกคอมพิวเตอร์มานั่งทำงาน สามารถใช้ Wifi ที่มีให้บริการได้เช่นกัน
+                </p>
+            </div>
+
+        </div>
+
+        <div class="aside padding-bottom">
+            <span class="post-date">February 1, 2018</span>
+            <span class="like-num">3</span>
+            <span class="fa-heart">
+                <img src="images/home/like.png" onmouseover="hoverlike(this);"
+                     onmouseout="unhoverlike(this);"/>
+            </span>
+            <hr>
+            <h3>ที่ตั้ง</h3>
+            <p>195 ถนนสุรวงศ์ สี่พระยา เขตบางรัก กรุงเทพมหานคร 10500<br><br>
+                Website: <a href="www.neilsonhayslibrary.com"> www.neilsonhayslibrary.com</a><br>
+            </p>
+            <h3>เวลาทำการ</h3>
+            <p>เปิดให้บริการทุกวัน ยกเว้นวันจันทร์ <br>เวลา : 09.30 - 17.00 น.</p>
+            <p>
+                <table class="fee">
+                    <tr>
+                        <td>สมาชิก</td>
+                        <td>ราคาค่าสมาชิก</td>
+                    </tr>
+                    <tr>
+                        <td>รายปี</td>
+                        <td>2,500</td>
+                    </tr>
+                    <tr>
+                        <td>รายวัน</td>
+                        <td>100</td>
+                    </tr>
+                </table>
+            </p>
+            <div id="map"></div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center bottom-separator">
+                <img src="images/home/under.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(13.727054, 100.522950), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script language="JavaScript" src="js/slideshow.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2xE0K1JFc3ZSwbEjqG2NfHGiHvRWUin0&callback=myMap"></script>
+
+</body>
+</html>

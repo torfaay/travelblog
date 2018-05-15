@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Art in paradise BKK</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/place.css" rel="stylesheet">
+</head>
+<body>
+<header id="header">
+    <section id="page-breadcrumb">
+        <div id="login_block" class="modal">
+            <form class="modal-content animate" method="post" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('login_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label><b>E-mail</b>
+                        <input type="email" placeholder="Enter E-mail as username" id="username" required>
+                        <p id="warningEmail_login" class="invalid">Invalid Email</p>
+                    </label>
+
+                    <label><b>Password</b>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    </label>
+
+
+                    <button type="submit" id="Login">Login</button>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw" id="ForgetPass">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div id="register_block" class="modal2">
+            <form class="modal-content animate" method="post" action="">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('register_block').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="logo" class="avatar">
+                </div>
+                <div class="login-container">
+                    <label for="rusername"><b>E-mail</b>
+                    <input type="email" placeholder="example@gmail.com" id="rusername" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ></label>
+                    <p id="warningEmail" class="invalid">Invalid Email</p>
+
+                    <label for="rname"><b>DisplayName</b>
+                        <input type="text" placeholder="YourDisplayName" id="rname" minlength="4" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}">
+                    </label>
+                    <p id="warningName_num" class="invalid">Minimum 4 letters</p>
+                    <p id="warningName_char" class="invalid">Don't use Special Character</p>
+
+                    <label for="rpassword"><b>Password</b>
+                    <input type="password" placeholder="Enter Password" id="rpassword" minlength="6" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <p id="warningPass" class="invalid">Minimum 6 letters</p>
+
+                    <label for="conpassword"><b>Confirm Password</b>
+                    <input type="password" placeholder="Confirm Password" id="conpassword" minlength="6" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <p id="warningConPass" class="invalid">Password doesn't match</p>
+
+                    <button type="submit" id="Register" value="Submit">Register</button>
+                </div>
+                <div class="login-bottom">
+                    <span class="fpsw" id="RForgetPass">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="navbar navbar-inverse" role="banner">
+            <table class="navbart">
+                <tr>
+                    <td rowspan="2">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </td>
+                    <td>
+                        <div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li onclick="login()"><a href="#modal" class="button-login"> Login</a></li>
+                                    <li onclick="register()"><a href="#modal" class="button-login"> Register |</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="navbarlist overflow">
+                        <ul>
+                            <li><a href="type_religious.html">Religious Sites</a></li>
+                            <li><a href="type_art_museum.html">Art & Museum</a></li>
+                            <li><a href="type_market.html">Market</a></li>
+                            <li><a href="type_natural.html">Natural</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</header>
+<!--/#header-->
+
+<section id="blog_content" class="padding-bottom">
+    <div class="page_header">
+        <h1>Art in paradise BKK</h1>
+    </div>
+    <div class="page_content">
+        <div class="article">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/museum/museum_artinparadise_1.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/museum/museum_artinparadise_2.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/museum/museum_artinparadise_3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/museum/museum_artinparadise_4.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <div class="article_info">
+                <p>Art in Paradise กรุงเทพฯ พิพิธภัณฑ์รูปภาพสามมิติ ที่มีดีมากกว่าความสวยสมจริง ใครที่หลงใหลในภาพสามมิติล่ะก็ ที่นี่น่าจะเป็นคำตอบที่ดี<br></p>
+                <p>Art in Paradise กรุงเทพฯ จะแบ่งเป็น 5 โซนด้วยกัน คือ โซนโลกใต้สมุทรและโซนซาฟารี, โซนภาพคลาสสิก, โซนแฟนตาซี, โซนธรรมชาติ และโซนศิลปะแบบโมเดิร์น
+                    แต่ละโซนนั้นมีความสวยงามและโดดเด่นต่างกันไป ซึ่งนอกจากจะได้ชมความงดงามเสมือนจริงของภาพโซนต่างๆ แล้ว คุณยังจะได้เรียนรู้เทคนิคการวาดภาพแบบ 3 มิติ ที่ต้องสังเกตด้วยตัวเองนะคะ
+                    เพราะบรรดาจิตรกรเขาบอกว่าเทคนิคเหล่านี้บอกกันไม่ได้ ถ้าใครอยากรู้ต้องมาสัมผัสเองที่นี่ นอกจากภาพวาดสวยๆ แล้ว ยังมีมุมของ Interactive Media วิดีโอ
+                    ที่สามารถโต้ตอบกับคนดูได้ทั้งปฏิกิริยา สีหน้า และท่าทาง ถือเป็นอีกมุมหนึ่งที่เรียกรอยยิ้มของผู้เข้าชมได้ไม่น้อย
+                </p>
+            </div>
+        </div>
+
+        <div class="aside padding-bottom">
+            <span class="post-date">February 14, 2018</span>
+            <span class="like-num">3</span>
+            <span class="fa-heart">
+                <img src="images/home/like.png" onmouseover="hoverlike(this);"
+                     onmouseout="unhoverlike(this);"/>
+            </span>
+            <hr>
+            <h3>ที่ตั้ง</h3>
+            <p>ชั้น 4 ห้างสรรพสินค้าเอสพลานาด ถนนรัชดาภิเษก เขตห้วยขวาง กรุงเทพฯ 10400 <br><br>
+                โทรศัพท์ 02-660-9130</p>
+            <h3>เวลาทำการ</h3>
+            <p>เปิดให้บริการทุกวัน <br>เวลา: 10.00 - 22.00 น.</p>
+            <p>
+            <table class="fee">
+                <tr>
+                    <td>ผู้เข้าชม</td>
+                    <td>ราคาบัตร</td>
+                </tr>
+                <tr>
+                    <td>ชาวต่างชาติ<br>(ผู้ใหญ่)</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>ชาวไทย<br>(ผู้ใหญ่)</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>เด็กต่างชาติ</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>เด็กไทย</td>
+                    <td>120</td>
+                </tr>
+            </table>
+            </p>
+            <div id="map"></div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center bottom-separator">
+                <img src="images/home/under.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>  
+
+<script>
+function myMap() {
+    var place = {lat: 13.766544, lng: 100.569366};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: place
+        });
+        var marker = new google.maps.Marker({
+          position: place,
+          map: map
+        });
+}
+
+</script>
+<script language="JavaScript" src="js/slideshow.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2xE0K1JFc3ZSwbEjqG2NfHGiHvRWUin0&callback=myMap"></script>
+
+</body>
+</html>
