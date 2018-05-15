@@ -1,0 +1,107 @@
+.page_header{
+    width:100%;
+    height: 100px;
+    padding-top:0px;
+    /*background: yellow;*/
+}
+
+.page_header h1{
+    font-size: 48px;
+    text-align: center;
+}
+
+.page_content{
+    width:100%;
+
+}
+
+.article{
+    width: 65%;
+	height: auto;
+	margin-left: 5%;
+    float: left;
+
+}
+
+.slideshow-container{
+    position: relative;
+
+}
+
+.slideshow-container img{
+    width: 88%;
+    height: 100%;
+    margin-left:5%;
+}
+.mySlides {
+    display: none
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-left:6%;
+  margin-right:8%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.article_info{
+    width: 78%;
+    height: auto;
+    margin: auto;
+
+}
+
+.article_info p {
+    text-indent: 2.5em;
+}
+
+.aside{
+    width: 25%;
+	height: auto;
+	margin-right: 5%;
+    float: right;
+
+    /*background: red;*/
+}
+.aside h3{color:#C03035;}
+.aside p{padding-left:30px;}
+.aside #map{margin-top:20px;width:100%;height:200px;}
+
+.fee, .fee td {
+            border-collapse: collapse;
+            text-align: center;
+            border: 1px solid;
+            padding: 7px;
+        }
+.fee {
+    margin: 0 auto;
+}
